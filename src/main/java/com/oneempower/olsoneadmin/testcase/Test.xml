@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="OLS OneAdmin">
+    <parameter name="browserType" value="chrome" />
+    <parameter name="appURL"
+               value="http://192.168.99.66:8080/oneadmin/login" />
+    <test name="SigninTest">
+        <classes>
+            <class name="com.oneempower.olsoneadmin.testcase.SigninTest">
+                <methods>
+                    <include name="signIn"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
